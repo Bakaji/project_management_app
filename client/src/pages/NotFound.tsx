@@ -1,0 +1,15 @@
+import { FaExclamationTriangle } from "react-icons/fa"
+import { Link } from "react-router-dom"
+export default function NotFound() {
+  return (
+    <div>
+      <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+        <FaExclamationTriangle size="5em"/>
+        <p className="lead">
+            Sorry page not found
+        </p>
+        <Link to="/">Go back</Link>
+      </div>
+    </div>
+  )
+}
